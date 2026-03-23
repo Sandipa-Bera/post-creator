@@ -1,0 +1,101 @@
+/* Page Background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  /* Dark blue gradient background */
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #0f172a);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Section Container */
+.create-post-section {
+  background: rgba(15, 23, 42, 0.9);
+  padding: 30px;
+  border-radius: 16px;
+  width: 350px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+/* Heading */
+.create-post-section h1 {
+  color: #e0e7ff;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Form Layout */
+.create-post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Inputs */
+.create-post-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* File Input Styling */
+.create-post-form input[type="file"] {
+  background: #1e293b;
+  color: #cbd5f5;
+  cursor: pointer;
+}
+
+/* Text Input */
+.create-post-form input[type="text"] {
+  background: #1e293b;
+  color: #e2e8f0;
+}
+
+/* Button */
+.create-post-form button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button Hover */
+.create-post-form button:hover {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  transform: scale(1.05);
+}
+
+/* Focus Effects */
+.create-post-form input:focus {
+  box-shadow: 0 0 0 2px #3b82f6;
+  transition: transform 0.25s ease,
+  background 0.3s ease;
+}
+
+.loader {
+  width: 18px;
+  height: 18px;
+  border: 3px solid #fff;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  display: inline-block;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
